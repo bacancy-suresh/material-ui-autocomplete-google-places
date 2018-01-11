@@ -34,7 +34,7 @@ var GooglePlaceAutocomplete = function (_Component) {
 
     _this.state = {
       data: [],
-      searchText: ''
+      searchText: props.searchText ? props.searchText : ''
     };
 
     var google = window.google;
