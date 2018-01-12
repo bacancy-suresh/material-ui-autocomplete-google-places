@@ -9,7 +9,7 @@ class GooglePlaceAutocomplete extends Component {
 
     this.state = {
       data: [],
-      searchText: '',
+      searchText: props.searchText ? props.searchText : '',
     };
 
     const google = window.google;
